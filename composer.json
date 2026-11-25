@@ -1,0 +1,60 @@
+{
+  "name": "datacircle/logiscape-mcp-tools",
+  "description": "Find the best GTM APIs. This package adds four tools to an MCP server made with the MCP SDK for PHP (logiscape/mcp-sdk-php). The tools call Datacircle's public API. You need no API key.",
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://datacircle.dev",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "mcp-server",
+    "mcp-tools",
+    "logiscape",
+    "mcp-sdk-php",
+    "tools",
+    "api",
+    "gtm",
+    "datacircle"
+  ],
+  "authors": [
+    {
+      "name": "Wayne Hamadi",
+      "email": "wayne@datacircle.dev",
+      "homepage": "https://datacircle.dev"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/waynehamadi/logiscape-mcp-datacircle/issues",
+    "source": "https://github.com/waynehamadi/logiscape-mcp-datacircle",
+    "docs": "https://datacircle.dev/api"
+  },
+  "require": {
+    "php": "^8.1",
+    "ext-curl": "*",
+    "ext-json": "*",
+    "logiscape/mcp-sdk-php": "^1.7 || ^2.0"
+  },
+  "require-dev": {
+    "nyholm/psr7": "^1.8",
+    "psr/http-client": "^1",
+    "phpunit/phpunit": "^10.5 || ^11.5 || ^12.0"
+  },
+  "suggest": {
+    "psr/http-client": "To call through a PSR-18 client of your own, such as Guzzle"
+  },
+  "autoload": {
+    "psr-4": {
+      "Datacircle\\LogiscapeMcp\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Datacircle\\LogiscapeMcp\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "phpunit"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
